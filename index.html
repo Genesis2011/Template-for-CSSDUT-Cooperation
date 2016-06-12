@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+   <meta name="author" content="李厚峰">
+
+   <title>校企合作企业</title>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <script src="js/jquery-2.1.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <link href="css/template.css" rel="stylesheet">
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+   <![endif]-->
+</head>
+<body>
+
+    <div class="template-masthead">
+      <div class="container">
+        <nav class="template-nav">
+          <a class="template-nav-item active" href="#">校企合作企业官网网址</a>
+          <a class="template-nav-item" href="http://sci.sdut.edu.cn/">山东理工大学理学院</a>
+          <a class="template-nav-item" href="http://jwch.sdut.edu.cn/">山东理工大学教务处</a>
+          <a class="template-nav-item" href="http://lib.sdut.edu.cn/index.html">山东理工大学图书馆</a>
+          <a class="template-nav-item" href="http://sci.sdut.edu.cn/undergraduate/cooperation/">理学院校企合作企业</a>
+        </nav>
+      </div>
+    </div>
+
+
+    <!-- Carousel================================================== -->
+    <div id="myCarousel" class="carousel slide">
+       <!-- 轮播（Carousel）指标 -->
+       <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+       </ol>   
+       <!-- 轮播（Carousel）项目 -->
+       <div class="carousel-inner">
+          <div class="item active" align="center">
+             <img src="img/1.jpg" alt="First slide">
+          </div>
+          <div class="item" align="center">
+             <img src="img/2.jpg">
+          </div>
+          <div class="item" align="center">
+             <img src="img/3.jpg">
+          </div>
+          <div class="item" align="center">
+             <img src="img/4.jpg">
+          </div>
+          <div class="item" align="center">
+             <img src="img/5.jpg" alt="Last slide">
+          </div>
+       </div>
+       <!-- 轮播（Carousel）导航 -->
+       <a class="carousel-control left" href="#myCarousel" 
+          data-slide="prev">&lsaquo;</a>
+       <a class="carousel-control right" href="#myCarousel" 
+          data-slide="next">&rsaquo;</a>
+       <!-- 控制按钮 -->
+       <div style="text-align:center;">
+          <input type="button" class="btn start-slide" value="初始化轮播">
+          <input type="button" class="btn pause-slide" value="停止轮播">
+          <input type="button" class="btn prev-slide" value="上一张">
+          <input type="button" class="btn next-slide" value="下一张">
+          <input type="button" class="btn slide-first" value="第一张">          
+          <input type="button" class="btn slide-last" value="最后一张">
+       </div>
+    </div> <!-- /.carousel -->
+
+
+    <footer class="template-footer">
+          <p> Powered by <a href="http://getbootstrap.com">Bootstrap</a>，技术支持：<a href="https://github.com/Genesis2011">李厚峰</a> </p>
+    </footer>
+
+    <script>
+       $(function(){
+          // 初始化轮播
+          $(".start-slide").click(function(){
+             $("#myCarousel").carousel('cycle');
+          });
+          // 停止轮播
+          $(".pause-slide").click(function(){
+             $("#myCarousel").carousel('pause');
+          });
+          // 循环轮播到上一个项目
+          $(".prev-slide").click(function(){
+             $("#myCarousel").carousel('prev');
+          });
+          // 循环轮播到下一个项目
+          $(".next-slide").click(function(){
+             $("#myCarousel").carousel('next');
+          });
+          // 循环轮播到某个特定的帧 
+          $(".slide-first").click(function(){
+             $("#myCarousel").carousel(0);
+          });
+          $(".slide-last").click(function(){
+             $("#myCarousel").carousel(4);
+          });
+       });
+    </script>
+
+
+</body>
+</html>
